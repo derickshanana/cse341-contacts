@@ -2,10 +2,10 @@
 GET http://localhost:3000/contacts
 
 ### Get single contact by id (local) - replace with a real id after seeding
-GET http://localhost:3000/contacts/PUT_A_VALID_ID_HERE
+GET http://localhost:3000/contacts/6a5644b84e74eaa3a73359c4
 
 ### Get all contacts (Render, once deployed) - replace with your Render URL
-GET https://YOUR-APP-NAME.onrender.com/contacts
+GET https://cse341-contacts-lwfl.onrender.com/contacts
 
 ### Get single contact by id (Render)
-GET https://YOUR-APP-NAME.onrender.com/contacts/PUT_A_VALID_ID_HERE
+GET https://cse341-contacts-lwfl.onrender.com/contacts/6a5644b84e74eaa3a73359c4

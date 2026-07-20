@@ -1,11 +1,74 @@
-### Get all contacts (local)
+### =====================
+### LOCAL
+### =====================
+
+### Get all contacts
 GET http://localhost:3000/contacts
 
-### Get single contact by id (local) - replace with a real id after seeding
-GET http://localhost:3000/contacts/6a5644b84e74eaa3a73359c4
+### Get contact by id
+GET http://localhost:3000/contacts/PUT_A_REAL_ID_HERE
 
-### Get all contacts (Render, once deployed) - replace with your Render URL
-GET https://cse341-contacts-lwfl.onrender.com/contacts
+### Create a new contact
+POST http://localhost:3000/contacts
+content-type: application/json
 
-### Get single contact by id (Render)
-GET https://cse341-contacts-lwfl.onrender.com/contacts/6a5644b84e74eaa3a73359c4
+{
+  "firstName": "Ashley",
+  "lastName": "Weaver",
+  "email": "aweaver@test.com",
+  "favoriteColor": "Brown",
+  "birthday": "06/19/2000"
+}
+
+### Update a contact
+PUT http://localhost:3000/contacts/6a5e4b3c93751efbddfdbba7
+content-type: application/json
+
+{
+  "firstName": "Ashley",
+  "lastName": "Weaver",
+  "email": "aweaver-updated@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "06/19/2000"
+}
+
+### Delete a contact
+DELETE http://localhost:3000/contacts/6a5e4b3c93751efbddfdbba7
+
+
+### =====================
+### PRODUCTION (Render)
+### =====================
+
+### Get all contacts
+GET https://YOUR-APP-NAME.onrender.com/contacts
+
+### Get contact by id
+GET https://YOUR-APP-NAME.onrender.com/contacts/PUT_A_REAL_ID_HERE
+
+### Create a new contact
+POST https://YOUR-APP-NAME.onrender.com/contacts
+content-type: application/json
+
+{
+  "firstName": "Marcus",
+  "lastName": "Lee",
+  "email": "mlee@test.com",
+  "favoriteColor": "Green",
+  "birthday": "03/22/1994"
+}
+
+### Update a contact
+PUT https://YOUR-APP-NAME.onrender.com/contacts/PUT_A_REAL_ID_HERE
+content-type: application/json
+
+{
+  "firstName": "Marcus",
+  "lastName": "Lee",
+  "email": "mlee-updated@test.com",
+  "favoriteColor": "Purple",
+  "birthday": "03/22/1994"
+}
+
+### Delete a contact
+DELETE https://YOUR-APP-NAME.onrender.com/contacts/PUT_A_REAL_ID_HERE
